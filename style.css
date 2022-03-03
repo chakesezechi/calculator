@@ -78,7 +78,7 @@ body {
 .switchBox input:checked ~ .box {
   left: 60%;
   background: #ff8308;
-}
+} 
 
 .input {
   width: 100%;
@@ -95,6 +95,8 @@ input {
   height: 60px;
   border: none;
   outline: none;
+  font-size: 1.5rem;
+  padding-left: 10px;
 }
 
 .cancel_btn {
@@ -103,12 +105,14 @@ input {
   border: none;
   background: #ff8308;
   font-size: 1.5rem;
+  color: white;
 }
 
 .row {
   width: 100%;
   margin: 10px 0;
 }
+
 
 .row input{
   width: 23.6%;
@@ -117,5 +121,19 @@ input {
   color: var(--color);
   border: 1px solid rgba(0, 0, 0, 0.137);
   font-size: 1.5rem;
+
+}
+
+.active {
+  animation: anim .4s;
+}
+@keyframes anim {
+  0%, 100% {
+    transform: scale(1);
+  }
   
+  50% {
+    transform: scale(1.1);
+    background: var(--hover_color);
+  }
 }
